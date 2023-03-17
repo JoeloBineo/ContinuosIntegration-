@@ -1,5 +1,5 @@
-     - name: Run markdown lint
-       run: |
+     - name: Run markdown lintin
+       run: 
          npm install remark-cli remark-preset-lint-consistent
          npx remark . --use remark-preset-lint-consistent --frail
        
@@ -9,7 +9,7 @@
       - uses: actions/checkout@v3
 
       - name: Run markdown lint
-        run: |
+        run: 
           npm install remark-cli remark-preset-lint-consistent
           npx remark . --use remark-preset-lint-consistent --frail
 
